@@ -1,0 +1,158 @@
+<div class="O-Footer__SearchForm">
+  <h3 class="O-Footer__SearchForm__heading col-sm-6 col-md-6"> 整站搜索 </h3>
+  <div class="O-Footer__SearchForm__inputfield col-sm-6 col-md-6">
+    <m-search-field-dynamic class="M-SearchField M-SearchField--searchForm" data-error-message="'数据检索期间出现错误。'" data-no-results-message="'没有与搜索相匹配的结果。'" data-placeholder="'搜索'" data-label="'搜索'" data-submit-label="'搜索'" data-show-autosuggestions-link="true" data-autosuggestions-link="'查看所有结果'" data-autosuggestions-heading="'最匹配的结果'" data-keep-search-form-open="'false'">
+      <form class="M-SearchField__form ng-pristine ng-valid">
+        <div class="M-SearchField__label" data-ng-click="$ctrl.openSearch()"><span class="M-SearchField__labelText">搜索</span></div>
+        <div class="M-SearchField__inputWrapper">
+          <button aria-label="搜索" type="submit" class="M-SearchField__submit" data-ng-click="$ctrl.onSubmit()">
+          <a-icon-dynamic data-name="'search'" data-width="20" data-height="20">
+            <svg class="A-Icon A-Icon--search" data-ng-class="[ 'A-Icon--' + $ctrl.name, $ctrl.variation &amp;&amp; 'A-Icon--' + $ctrl.variation, {'A-Icon--inverted': $ctrl.inverted} ]" data-ng-attr-width="{{$ctrl.width || 24}}" data-ng-attr-height="{{$ctrl.height || 24}}" width="20" height="20">
+              <title>Icon search</title>
+              <use xlink:href="https://www.bosch.com.cn/#search" data-ng-attr-xlink:href="{{$ctrl.name &amp;&amp; ('#' + $ctrl.name)}}"></use>
+            </svg>
+          </a-icon-dynamic>
+          </button>
+          <input data-ng-blur="$ctrl.closeSearch()" aria-label="搜索" class="M-SearchField__input ng-pristine ng-untouched ng-valid ng-empty" data-ng-model="$ctrl.searchTerm" data-ng-focus="$ctrl.initQuickSearch()" disabled="disabled" type="text">
+        </div>
+        <a-icon-dynamic class="M-SearchField__close" data-ng-click="$ctrl.closeSearch()" data-name="'close'" data-width="13" data-height="13">
+          <svg class="A-Icon A-Icon--close" data-ng-class="[ 'A-Icon--' + $ctrl.name, $ctrl.variation &amp;&amp; 'A-Icon--' + $ctrl.variation, {'A-Icon--inverted': $ctrl.inverted} ]" data-ng-attr-width="{{$ctrl.width || 24}}" data-ng-attr-height="{{$ctrl.height || 24}}" width="13" height="13">
+            <title>Icon close</title>
+            <use xlink:href="https://www.bosch.com.cn/#close" data-ng-attr-xlink:href="{{$ctrl.name &amp;&amp; ('#' + $ctrl.name)}}"></use>
+          </svg>
+        </a-icon-dynamic>
+      </form>
+      <a-collapsable class="A-Collapsable A-Collapsable--collapsed" data-collapsed="$ctrl.state !== 'showResults'" style="max-height: 0px;">
+        <div class="M-SearchField__results">
+          <m-autosuggestions-dynamic data-autosuggestions="$ctrl.results" data-heading="$ctrl.autosuggestionsHeading">
+            <ul class="M-Search-Autosuggestions">
+              <!---->
+              <li class="M-Search-Autosuggestions__heading" data-ng-if="$ctrl.heading" data-ng-bind-html="$ctrl.trustHtml($ctrl.heading)">最匹配的结果</li>
+              <!----><!---->
+            </ul>
+          </m-autosuggestions-dynamic>
+          <a-link-dynamic class="M-SearchField__resultsLink" data-span-tag="true" data-type="'primary'" data-text="$ctrl.autosuggestionsLink" data-ng-click="$ctrl.onSubmit()">
+            <div class="A-Link A-Link--primary" data-ng-class="[ 'A-Link--' + ($ctrl.type || 'primary'), $ctrl.variationClasses &amp;&amp; 'A-Link--' + $ctrl.variationClasses, { 'A-Link--no-margins': $ctrl.noMargins, 'A-Link--button--filled': $ctrl.type === 'button' &amp;&amp; $ctrl.filled, 'A-Link--button--inverted': $ctrl.type === 'button' &amp;&amp; $ctrl.inverted, 'A-Link--button--dark': $ctrl.type === 'button' &amp;&amp; $ctrl.dark } ]"><!----> <!----><span data-ng-if="$ctrl.spanTag" class="A-Link__link A-Link__link--span A-Link__link--primary" data-ng-class="[ 'A-Link__link--' + ($ctrl.type || 'primary'), $ctrl.variationClasses &amp;&amp; 'A-Link__link--' + $ctrl.variationClasses, { 'A-Link__link--no-hover-color': $ctrl.noHoverColor, 'A-Link__link--inverted': $ctrl.inverted, 'u-BoldFontWeight': $ctrl.boldFontWeight } ]"><!----><span data-ng-if="!$ctrl.iconLeft" class="A-Link__linkText">查看所有结果</span><!----><!---->
+              <a-icon-dynamic class="A-Link__Icon" data-ng-class="{ 'A-Link__Icon--left' : $ctrl.iconLeft, 'A-Link__icon--no-animation': $ctrl.iconNoAnimate }" data-ng-if="!$ctrl.noIcon" data-name="$ctrl.iconName || 'forward-right'" data-width="$ctrl.iconExtraLarge ? 20 : $ctrl.iconLarge ? 14 : 10" data-height="$ctrl.iconExtraLarge ? 20 : $ctrl.iconLarge ? 14 : 10">
+                <svg class="A-Icon A-Icon--forward-right" data-ng-class="[ 'A-Icon--' + $ctrl.name, $ctrl.variation &amp;&amp; 'A-Icon--' + $ctrl.variation, {'A-Icon--inverted': $ctrl.inverted} ]" data-ng-attr-width="{{$ctrl.width || 24}}" data-ng-attr-height="{{$ctrl.height || 24}}" width="10" height="10">
+                  <title>Icon forward-right</title>
+                  <use xlink:href="https://www.bosch.com.cn/#forward-right" data-ng-attr-xlink:href="{{$ctrl.name &amp;&amp; ('#' + $ctrl.name)}}"></use>
+                </svg>
+              </a-icon-dynamic>
+              <!----><!----></span><!----></div>
+          </a-link-dynamic>
+        </div>
+      </a-collapsable>
+      <a-collapsable class="A-Collapsable A-Collapsable--collapsed" data-collapsed="$ctrl.state !== 'error'" style="max-height: 0px;">
+        <a-callout-dynamic class="M-SearchField__callout" data-type="'warning'" data-text="$ctrl.error">
+          <div class="A-Callout A-Callout--warning" data-ng-class="'A-Callout--' + ($ctrl.type || 'warning') + ($ctrl.inverted &amp;&amp; '--inverted')">
+            <a-icon-dynamic data-name="$ctrl.type || 'warning'" data-width="25" data-height="25">
+              <svg class="A-Icon A-Icon--warning" data-ng-class="[ 'A-Icon--' + $ctrl.name, $ctrl.variation &amp;&amp; 'A-Icon--' + $ctrl.variation, {'A-Icon--inverted': $ctrl.inverted} ]" data-ng-attr-width="{{$ctrl.width || 24}}" data-ng-attr-height="{{$ctrl.height || 24}}" width="25" height="25">
+                <title>Icon warning</title>
+                <use xlink:href="https://www.bosch.com.cn/#warning" data-ng-attr-xlink:href="{{$ctrl.name &amp;&amp; ('#' + $ctrl.name)}}"></use>
+              </svg>
+            </a-icon-dynamic>
+          </div>
+        </a-callout-dynamic>
+      </a-collapsable>
+    </m-search-field-dynamic>
+  </div>
+</div>
+
+<FOOTER class="O-Footer" id="footer">
+  <DIV class="container">
+    <DIV class="row">
+      <DIV class="M-FooterNavigation">
+        <HR class="M-FooterNavigation__horizontalLine u-HorizontalLine">
+        <DIV class="col-xs-12 col-sm-12 col-md-3">
+          <DIV class="M-FooterNavigation__navHeading">{dede:type typeid='2'}[field:typename/] {/dede:type}</DIV>
+          <UL class="M-FooterNavigation__list u-UnstyledList">
+            {dede:channel typeid='2' type ='son'}
+            <LI><A class='M-FooterNavigation__links' href='[field:typelink/]'
+  target='_blank' rel='noopener noreferrer'><SPAN 
+  class='A-Link__linkText'>[field:typename/]</SPAN></A> </LI>
+            {/dede:channel}
+          </UL>
+          <DIV class="M-FooterNavigation__social">
+            <DIV class="M-SocialShareIcons M-SocialShareIcons--leftAligned">
+              <DIV 
+class="M-SocialShareIcons__icons M-SocialShareIcons__icons--leftAligned"></DIV>
+            </DIV>
+          </DIV>
+          <HR class="M-FooterNavigation__horizontalLine u-HorizontalLine">
+        </DIV>
+        <DIV class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1">
+          <DIV class="M-FooterNavigation__navHeading">{dede:type typeid='4'}
+            [field:typename/]
+            {/dede:type}</DIV>
+          <UL class="M-FooterNavigation__list u-UnstyledList">
+            {dede:channel typeid='4' type ='son'}
+            <LI><A class='M-FooterNavigation__links' href='[field:typelink/]'
+  target='_blank' rel='noopener noreferrer'><SPAN 
+  class='A-Link__linkText'>[field:typename/]</SPAN></A> </LI>
+            {/dede:channel}
+          </UL>
+          <HR class="M-FooterNavigation__horizontalLine u-HorizontalLine">
+        </DIV>
+        <DIV class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1">
+          <DIV class="M-FooterNavigation__blockInstance">
+            <DIV class="M-FooterNavigation__blockInstance__heading">所在页面</DIV>
+            <DIV class="M-FooterNavigation__blockInstance__name">{dede:field name='typeid' function="GetTopTypename(@me)/}</DIV>
+            <DIV class="A-Link A-Link--primary A-Link--no-margins"></DIV>
+          </DIV>
+          <DIV class="M-FooterNavigation__blockApps">
+            <DIV class="M-FooterNavigation__blockApps__heading">所有湛道应用程序</DIV>
+            <DIV class="A-Link A-Link--primary A-Link--no-margins"><A class="A-Link__link A-Link__link--primary A-Link__link--no-marginsA-Link__link--small" 
+href="https://appcenter.bosch.com/" target="_blank" 
+rel="noopener noreferrer"><SPAN class="A-Link__linkText">湛道App 中心</SPAN><SPAN 
+class="A-Link__Icon"><svg xmlns="http://www.w3.org/2000/svg" class="A-Icon A-Icon--forward-right" 
+width="10" height="10">
+              <title>Icon forward-right</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" 
+xlink:href="#forward-right" 
+/>
+              </svg></SPAN></A></DIV>
+          </DIV>
+        </DIV>
+      </DIV>
+    </DIV>
+  </DIV>
+  <DIV class="O-Footer__Copyright">
+    <UL class="O-Footer__Copyright__navigation u-UnstyledList">
+      <LI class="O-Footer__Copyright__navigationItem">
+        <DIV class="A-Link A-Link--primary"><A class="A-Link__link A-Link__link--primary" 
+  href="http://www.miibeian.gov.cn/" target="_blank" 
+  rel="noopener noreferrer"><SPAN 
+  class="A-Link__linkText">沪ICP备10002431号</SPAN></A></DIV>
+      </LI>
+      <LI class="O-Footer__Copyright__navigationItem">
+        <DIV class="A-Link A-Link--primary"><A class="A-Link__link A-Link__link--primary" 
+  href="https://www.bosch.com.cn/terms-of-use/terms-of-use/provider/"><SPAN 
+  class="A-Link__linkText">使用条款</SPAN></A></DIV>
+      </LI>
+      <LI class="O-Footer__Copyright__navigationItem">
+        <DIV class="A-Link A-Link--primary"><A class="A-Link__link A-Link__link--primary" 
+  href="https://www.bosch.com.cn/terms-of-use/terms-of-use/privacy-statement/"><SPAN 
+  class="A-Link__linkText">隐私声明</SPAN></A></DIV>
+      </LI>
+    </UL>
+    <DIV class="O-Footer__Copyright__heading">© 2018 上海湛道网络科技有限公司 </DIV>
+  </DIV>
+  <DIV class="O-Footer__A-Button-BackToTop">
+    <a-button-back-to-top title="返回顶部" 
+class="A-Button-BackToTop">
+      <DIV class="A-Button-BackToTop__clicktarget" 
+data-ng-click="$ctrl.scrollToTop()"><svg xmlns="http://www.w3.org/2000/svg" 
+class="A-Icon A-Icon--up" width="24" height="24">
+        <title>返回顶部</title>
+        <use 
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#up" />
+        </svg> </DIV>
+    </a-button-back-to-top>
+  </DIV>
+</FOOTER>
+<script defer="defer" src="/skin/js/vendor.js"></script> <script defer="defer" src="/skin/js/main.js"></script> 
+ <script> window.webtrendsAsyncInit=function(){ var dcs=new Webtrends.dcs().init({ dcsid:"dcs22285csid42wv5gskq060z_9f3g" ,domain:"statse.webtrendslive.com" ,fpcdom:".bosch.com.cn" ,fpc:"WT_FPC" ,timezone:8 ,i18n:true ,adimpressions:true ,adsparam:"WT.ac" ,offsite:true ,onsitedoms:"bosch.com.cn" ,download:true ,downloadtypes:"pdf,xlsx,xls,docx,doc,pptx,ppt,txt,csv,zip,rar,mp3" ,rightclick:"true" ,javascript:"true" ,anchor:true ,paidsearchparams:"gclid,ad_id" ,plugins:{ hm:{src:'//s.webtrends.com/js/webtrends.hm.min.js'} ,facebook:{src:'//s.webtrends.com/js/webtrends.fb.min.js'} ,edyTrack:{src:'//btm.bosch.com/rb/edyTrack.js'} } }); dcs.track({ transform:function(dcsObject,multiTrackObject){ dcsObject.DCS.dcsipa="1"; } }) }; (function(){ var s=document.createElement("script");s.async=true;s.defer=true;s.src="//s.webtrends.com/js/webtrends.min.js"; var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2); }()); </script>
+<noscript>
+<img alt="dcsimg" id="dcsimg1" width="1" height="1" src="statse.webtrendslive.com/dcs22285csid42wv5gskq060z_9f3g/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=10.4.1&amp;dcssip=www.bosch.de"/>
+</noscript>

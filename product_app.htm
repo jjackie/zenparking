@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)http://www.bosch-mobility-solutions.cn/cn/highlights/connected-mobility/bosch-mobility-apps/ -->
+<html lang="zh" data-ng-app="bbm.v2.app" class="ng-scope">
+<head data-page-id="8761684" data-last-changed="16-05-2017">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+[uib-typeahead-popup].dropdown-menu {
+	display: block;
+}
+</style>
+<style type="text/css">
+.uib-time input {
+	width: 50px;
+}
+</style>
+<style type="text/css">
+[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow, [uib-tooltip-popup].tooltip.top-right > .tooltip-arrow, [uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow, [uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow, [uib-tooltip-popup].tooltip.left-top > .tooltip-arrow, [uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow, [uib-tooltip-popup].tooltip.right-top > .tooltip-arrow, [uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow, [uib-popover-popup].popover.top-left > .arrow, [uib-popover-popup].popover.top-right > .arrow, [uib-popover-popup].popover.bottom-left > .arrow, [uib-popover-popup].popover.bottom-right > .arrow, [uib-popover-popup].popover.left-top > .arrow, [uib-popover-popup].popover.left-bottom > .arrow, [uib-popover-popup].popover.right-top > .arrow, [uib-popover-popup].popover.right-bottom > .arrow, [uib-popover-html-popup].popover.top-left > .arrow, [uib-popover-html-popup].popover.top-right > .arrow, [uib-popover-html-popup].popover.bottom-left > .arrow, [uib-popover-html-popup].popover.bottom-right > .arrow, [uib-popover-html-popup].popover.left-top > .arrow, [uib-popover-html-popup].popover.left-bottom > .arrow, [uib-popover-html-popup].popover.right-top > .arrow, [uib-popover-html-popup].popover.right-bottom > .arrow, [uib-popover-template-popup].popover.top-left > .arrow, [uib-popover-template-popup].popover.top-right > .arrow, [uib-popover-template-popup].popover.bottom-left > .arrow, [uib-popover-template-popup].popover.bottom-right > .arrow, [uib-popover-template-popup].popover.left-top > .arrow, [uib-popover-template-popup].popover.left-bottom > .arrow, [uib-popover-template-popup].popover.right-top > .arrow, [uib-popover-template-popup].popover.right-bottom > .arrow {
+	top: auto;
+	bottom: auto;
+	left: auto;
+	right: auto;
+	margin: 0;
+}
+[uib-popover-popup].popover, [uib-popover-html-popup].popover, [uib-popover-template-popup].popover {
+	display: block !important;
+}
+</style>
+<style type="text/css">
+.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}
+</style>
+<style type="text/css">
+.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}
+</style>
+<style type="text/css">
+.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}
+</style>
+<style type="text/css">
+.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}
+</style>
+<style type="text/css">
+@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}
+</style>
+<!--<base href="/">-->
+<base href=".">
+<title>下载博世智能出行APP——日常生活、修理厂以及车队</title>
+<meta name="description" content="无论是用于诊断、节约燃油或用作车载计算机——智能手机版博世智能出行APP可让出行更安全、高效以舒适。">
+<meta name="keywords" content="">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="http://www.bosch-mobility-solutions.cn/tech/assets/img/favicon.png">
+<link href="/skin/css/style.css" type="text/css" rel="stylesheet" />
+<link href="/skin/css/reset.css" type="text/css" rel="stylesheet" />
+<link href="/skin/css/pintuer.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="/skin/js/jquery.min.js"></script>
+<script type="text/javascript" src="/skin/js/common.js"></script>
+<script type="text/javascript" src="/skin/js/pintuer.js"></script>
+<script type="text/javascript" src="/skin/js/touchslide.1.1.js"></script>
+<link rel="stylesheet" href="/skin/css/main.css" media="all" type="text/css">
+<link rel="stylesheet" href="/skin/css/animation.css" media="all" type="text/css">
+<!--=== HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries ===-->
+<!--[if lte IE 8]>
+    <script type="text/javascript" src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script type="text/javascript" src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>    
+    <![endif]-->
+<meta name="og:type" content="website">
+<meta name="og:url" content="http://www.bosch-mobility-solutions.cn/cn/highlights/connected-mobility/bosch-mobility-apps/">
+<meta name="og:title" content="下载博世智能出行APP——日常生活、修理厂以及车队">
+<meta name="og:description" content="无论是用于诊断、节约燃油或用作车载计算机——智能手机版博世智能出行APP可让出行更安全、高效以舒适。">
+<meta name="twitter:card" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:title" content="下载博世智能出行APP——日常生活、修理厂以及车队">
+<meta name="twitter:description" content="无论是用于诊断、节约燃油或用作车载计算机——智能手机版博世智能出行APP可让出行更安全、高效以舒适。">
+<!-- START Webtrends Tags -->
+<meta name="DCSext.wtg_brand" content="Bosch">
+<meta name="DCSext.wtg_country" content="CN">
+<meta name="DCSext.wtg_lang" content="Zh">
+<meta name="DCSext.wtg_bsector" content="BBM">
+<meta name="DCSext.wtg_division" content="OE">
+<meta name="DCSext.wtg_bu" content="OE">
+<meta name="DCSext.wtg_bbm" content="BBM1">
+<meta name="DCSext.wtg_bth1" content="101">
+<meta name="DCSext.wtg_bth2" content="101">
+<meta name="DCSext.wtg_bth3" content="101">
+<!-- END Webtrends Tags -->
+<!-- START extends tracking params -->
+<meta name="DCSext.bbm_pid" content="8761684">
+<meta name="DCSext.bbm_ptitle" content="Download Bosch mobility apps – for everyday life, repair shop, and fleet">
+<!-- END extends tracking params -->
+</head>
+<body breakpoint="">
+<div class="container" style="min-height: 190px">
+ <!--头部开始--> 
+{dede:include filename="head.htm"/}
+
+</div>
+
+<!-- Stage -->
+<div data-ng-controller="stageController" class="m-stage teaser-lg full-width ng-scope" style="height:">
+  <slick autoplay="true" autoplayspeed="5000" speed="1000" infinite="true" slides-to-show="1" slides-to-scroll="1" lazy-load="progressive" responsive="breakpoints" arrows="true" dots="true" append-arrows=".scs" append-dots=".scs" class="m-stage-slider ng-isolate-scope slick-initialized slick-slider" style="display: block;">
+    <div aria-live="polite" class="slick-list draggable">
+      <div class="slick-track" style="opacity: 1; width: 1903px; transform: translate3d(0px, 0px, 0px);" role="listbox">
+        <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 1903px;" tabindex="-1" role="option" aria-describedby="slick-slide00">
+          <div>
+            <div class="m-stage-slide" style="position: relative; width: 100%; display: inline-block;" data-index="1">
+              <figure>
+                <div class="img-wrapper"> <img src="/skin/css/bosch_mobility_solutions_mobility_apps_stage.jpg" data-src-mobile="/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/bosch_mobility_solutions_mobility_apps_stage_stage_mobile.jpg" data-src="/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/bosch_mobility_solutions_mobility_apps_stage.jpg" draggable="false"> </div>
+              </figure>
+              <div class="m-stage-text container">
+                <div class="teaser-text">
+                  <h2 class="h1"><strong>指尖的互联智能出行</strong><br>
+                    智能手机版博世智能出行APP</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </slick>
+  <div class="m-stage-controls scs" ng-show="isVisible" style="margin-left: 366.5px; width: 1170px;"></div>
+</div>
+<!-- Stage --> 
+<!-- content start --> 
+<a id="intro_text" name="intro_text"></a>
+<div ng-controller="AnchorSlideNavigation" in-view-options="{ offset: 500 }" in-view="containerInView(&#39;intro_text&#39;)" class="ng-scope"></div>
+<div class="bbm-module" id="intro_text">
+  <div class="container">
+    <div class="row mtb-50">
+      <div class="m-text-img-video  ">
+        <div class="col-md-12">
+          <h2 class="h2"><strong>无缝智能接入</strong><br>
+            于指尖轻松掌握瞬息变化 </h2>
+        </div>
+        <div class="col-md-6">
+          <p>智能手机是我们了解实时信息的最佳工具。湛道科技为停车设备配置了相应的微信小程序，用户随时随地可以通过手机接入网络进行实时车位查询和预定，</p>
+        </div>
+        <div class="col-md-6 profit-box">
+          <p>实现进出停车场不停车、智能支付结算等停车全流程服务。这种无缝式的智能接入，让每个用户都可以平等而自由地享受到智能化产品给生活带来的种种舒心与便利。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<a id="tooltip_every_day_life" name="tooltip_every_day_life"></a>
+<div ng-controller="hotspotsController" id="tooltip_every_day_life" style="background-color:#f1f1f1;" class="m-hotspot hotspot-fullsize hotspot-bg ng-scope" targetspots="{              
+			&quot;spot0&quot;:{ 
+				&quot;position&quot;: &quot;bottom&quot;,     
+				&quot;positionX&quot;: &quot;43&quot;,
+				&quot;positionY&quot;:&quot;58&quot;,
+				&quot;text&quot;: &quot;&lt;div class=\&quot;popover-content-inner\&quot;&gt;&lt;div class=\&quot;popover-content-img\&quot;&gt;&lt;img src=\&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-drivelog.png\&quot; class=\&quot;img-responsive\&quot; alt=\&quot;hotspot\&quot;&gt;&lt;/div&gt;&lt;div class=\&quot;popover-content-text\&quot;&gt;Drivelog（数字服务记录）帮助驾驶员找到附近的维修厂，并以固定价格预约维修服务。 &lt;br/&gt;&lt;a target=\&quot;_blank\&quot; href=\&quot;https://appcenter.bosch.com/details/-/app/DrivelogConnect\&quot;&gt;&lt;b&gt;前往博世APP中心&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;&quot;
+		   },           
+			&quot;spot1&quot;:{ 
+				&quot;position&quot;: &quot;bottom&quot;,     
+				&quot;positionX&quot;: &quot;9&quot;,
+				&quot;positionY&quot;:&quot;65&quot;,
+				&quot;text&quot;: &quot;&lt;div class=\&quot;popover-content-inner\&quot;&gt;&lt;div class=\&quot;popover-content-img\&quot;&gt;&lt;img src=\&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-fun2drive.png\&quot; class=\&quot;img-responsive\&quot; alt=\&quot;hotspot\&quot;&gt;&lt;/div&gt;&lt;div class=\&quot;popover-content-text\&quot;&gt;fun2drive记录速度、扭矩、油耗以及发动机性能。 &lt;br/&gt;&lt;a target=\&quot;_blank\&quot; href=\&quot;https://appcenter.bosch.com/details/-/app/Fun2Drive\&quot;&gt;&lt;b&gt;前往博世APP中心&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;&quot;
+		   },           
+			&quot;spot2&quot;:{ 
+				&quot;position&quot;: &quot;bottom&quot;,     
+				&quot;positionX&quot;: &quot;63&quot;,
+				&quot;positionY&quot;:&quot;68&quot;,
+				&quot;text&quot;: &quot;&lt;div class=\&quot;popover-content-inner\&quot;&gt;&lt;div class=\&quot;popover-content-img\&quot;&gt;&lt;img src=\&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-mydriveassist.png\&quot; class=\&quot;img-responsive\&quot; alt=\&quot;hotspot\&quot;&gt;&lt;/div&gt;&lt;div class=\&quot;popover-content-text\&quot;&gt;myDriveAssist在行车过程中识别交通标志，在车速过快时提醒驾驶员减速。 &lt;br/&gt;&lt;a target=\&quot;_blank\&quot; href=\&quot;https://appcenter.bosch.com/details/-/app/myDriveAssist\&quot;&gt;&lt;b&gt;前往博世APP中心&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;&quot;
+		   },           
+			&quot;spot3&quot;:{ 
+				&quot;position&quot;: &quot;bottom&quot;,     
+				&quot;positionX&quot;: &quot;66&quot;,
+				&quot;positionY&quot;:&quot;39&quot;,
+				&quot;text&quot;: &quot;&lt;div class=\&quot;popover-content-inner\&quot;&gt;&lt;div class=\&quot;popover-content-img\&quot;&gt;&lt;img src=\&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-sparfahrer.png\&quot; class=\&quot;img-responsive\&quot; alt=\&quot;hotspot\&quot;&gt;&lt;/div&gt;&lt;div class=\&quot;popover-content-text\&quot;&gt;Sparfahrer根据当前燃油价格计算最经济的路线。 &lt;br/&gt;&lt;a target=\&quot;_blank\&quot; href=\&quot;https://appcenter.bosch.com/details/-/app/Sparfahrer\&quot;&gt;&lt;b&gt;前往博世APP中心&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;&quot;
+		   },           
+			&quot;spot4&quot;:{ 
+				&quot;position&quot;: &quot;bottom&quot;,     
+				&quot;positionX&quot;: &quot;81&quot;,
+				&quot;positionY&quot;:&quot;55&quot;,
+				&quot;text&quot;: &quot;&lt;div class=\&quot;popover-content-inner\&quot;&gt;&lt;div class=\&quot;popover-content-img\&quot;&gt;&lt;img src=\&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-emobility.png\&quot; class=\&quot;img-responsive\&quot; alt=\&quot;hotspot\&quot;&gt;&lt;/div&gt;&lt;div class=\&quot;popover-content-text\&quot;&gt;充电APP通过直接引导电动车前往可用充电站扩大了电动车的应用范围。 &lt;br/&gt;&lt;a target=\&quot;_blank\&quot; href=\&quot;https://www.bosch-si.com/solutions/mobility/electromobility/charging-apps.html\&quot;&gt;&lt;b&gt;了解更多&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;&quot;
+		   },           
+			&quot;spot5&quot;:{ 
+				&quot;position&quot;: &quot;bottom&quot;,     
+				&quot;positionX&quot;: &quot;22&quot;,
+				&quot;positionY&quot;:&quot;39&quot;,
+				&quot;text&quot;: &quot;&lt;div class=\&quot;popover-content-inner\&quot;&gt;&lt;div class=\&quot;popover-content-img\&quot;&gt;&lt;img src=\&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-ebike-connect.png\&quot; class=\&quot;img-responsive\&quot; alt=\&quot;hotspot\&quot;&gt;&lt;/div&gt;&lt;div class=\&quot;popover-content-text\&quot;&gt;eBike互联促进智能手机和车载计算机之间的蓝牙数据交换。 &lt;br/&gt;&lt;a target=\&quot;_blank\&quot; href=\&quot;https://appcenter.bosch.com/details/-/app/BoscheBikeConnect\&quot;&gt;&lt;b&gt;前往博世APP中心&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;&quot;
+		   },           
+			&quot;spot6&quot;:{ 
+				&quot;position&quot;: &quot;bottom&quot;,     
+				&quot;positionX&quot;: &quot;29&quot;,
+				&quot;positionY&quot;:&quot;48&quot;,
+				&quot;text&quot;: &quot;&lt;div class=\&quot;popover-content-inner\&quot;&gt;&lt;div class=\&quot;popover-content-img\&quot;&gt;&lt;img src=\&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-ride-the-way.png\&quot; class=\&quot;img-responsive\&quot; alt=\&quot;hotspot\&quot;&gt;&lt;/div&gt;&lt;div class=\&quot;popover-content-text\&quot;&gt;Ride the Way提供1500条摩托车路线，让骑手间产生互联。 &lt;br/&gt;&lt;a target=\&quot;_blank\&quot; href=\&quot;http://www.ridetheway.it/\&quot;&gt;&lt;b&gt;了解更多&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;&quot;
+		   },           
+			&quot;spot7&quot;:{ 
+				&quot;position&quot;: &quot;bottom&quot;,     
+				&quot;positionX&quot;: &quot;12&quot;,
+				&quot;positionY&quot;:&quot;46&quot;,
+				&quot;text&quot;: &quot;&lt;div class=\&quot;popover-content-inner\&quot;&gt;&lt;div class=\&quot;popover-content-img\&quot;&gt;&lt;img src=\&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-lifebuddy.png\&quot; class=\&quot;img-responsive\&quot; alt=\&quot;hotspot\&quot;&gt;&lt;/div&gt;&lt;div class=\&quot;popover-content-text\&quot;&gt;在紧急情况下，Lifebuddy会迅速将当前位置的GPS坐标发送至救援中心。 &lt;br/&gt;&lt;a target=\&quot;_blank\&quot; href=\&quot;https://www.lifebuddy.com/?setLng=en_US\&quot;&gt;&lt;b&gt;了解更多&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;&quot;
+		   }           
+	   }">
+  <div class="container">
+    <div ng-controller="AnchorSlideNavigation" in-view="containerInView(&#39;tooltip_every_day_life&#39;)" in-view-options="{ offset: 500 }" class="ng-scope"></div>
+    <div class="mtb-50">
+      <h2 class="h2"><strong><strong>用发明服务探索者</strong> </strong><br>
+        智能出行APP，让每一天更精彩 </h2>
+      <div class="imagehotspot-container" data-id-popover="2" data-active-popover="inactive" style="height: 468px;">
+        <figure> <img src="/skin/css/bosch_mobility_solutions_tooltip_everydaylife.jpg" class="img-responsive"> </figure>
+        <!-- ngRepeat: element in elements track by $index -->
+        <div class="hotspot-new ng-scope" ng-mousedown="changeState()" data-ng-repeat="element in elements track by $index" data-el-index="0" popover-placement="bottom" popover-trigger="mouseup" data-position-x="43" data-position-y="58" popover="" uib-popover="&lt;div class=&quot;popover-content-inner&quot;&gt;&lt;div class=&quot;popover-content-img&quot;&gt;&lt;img src=&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-drivelog.png&quot; class=&quot;img-responsive&quot; alt=&quot;hotspot&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-content-text&quot;&gt;Drivelog（数字服务记录）帮助驾驶员找到附近的维修厂，并以固定价格预约维修服务。 &lt;br/&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://appcenter.bosch.com/details/-/app/DrivelogConnect&quot;&gt;&lt;b&gt;前往博世APP中心&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;" style="top: 58%; left: 43%;">
+          <div class="hotspot-icon-plus">
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--vertical"></div>
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--horizontal"></div>
+          </div>
+        </div>
+        <!-- end ngRepeat: element in elements track by $index -->
+        <div class="hotspot-new ng-scope" ng-mousedown="changeState()" data-ng-repeat="element in elements track by $index" data-el-index="1" popover-placement="bottom" popover-trigger="mouseup" data-position-x="9" data-position-y="65" popover="" uib-popover="&lt;div class=&quot;popover-content-inner&quot;&gt;&lt;div class=&quot;popover-content-img&quot;&gt;&lt;img src=&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-fun2drive.png&quot; class=&quot;img-responsive&quot; alt=&quot;hotspot&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-content-text&quot;&gt;fun2drive记录速度、扭矩、油耗以及发动机性能。 &lt;br/&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://appcenter.bosch.com/details/-/app/Fun2Drive&quot;&gt;&lt;b&gt;前往博世APP中心&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;" style="top: 65%; left: 9%;">
+          <div class="hotspot-icon-plus">
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--vertical"></div>
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--horizontal"></div>
+          </div>
+        </div>
+        <!-- end ngRepeat: element in elements track by $index -->
+        <div class="hotspot-new ng-scope" ng-mousedown="changeState()" data-ng-repeat="element in elements track by $index" data-el-index="2" popover-placement="bottom" popover-trigger="mouseup" data-position-x="63" data-position-y="68" popover="" uib-popover="&lt;div class=&quot;popover-content-inner&quot;&gt;&lt;div class=&quot;popover-content-img&quot;&gt;&lt;img src=&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-mydriveassist.png&quot; class=&quot;img-responsive&quot; alt=&quot;hotspot&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-content-text&quot;&gt;myDriveAssist在行车过程中识别交通标志，在车速过快时提醒驾驶员减速。 &lt;br/&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://appcenter.bosch.com/details/-/app/myDriveAssist&quot;&gt;&lt;b&gt;前往博世APP中心&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;" style="top: 68%; left: 63%;">
+          <div class="hotspot-icon-plus">
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--vertical"></div>
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--horizontal"></div>
+          </div>
+        </div>
+        <!-- end ngRepeat: element in elements track by $index -->
+        <div class="hotspot-new ng-scope" ng-mousedown="changeState()" data-ng-repeat="element in elements track by $index" data-el-index="3" popover-placement="bottom" popover-trigger="mouseup" data-position-x="66" data-position-y="39" popover="" uib-popover="&lt;div class=&quot;popover-content-inner&quot;&gt;&lt;div class=&quot;popover-content-img&quot;&gt;&lt;img src=&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-sparfahrer.png&quot; class=&quot;img-responsive&quot; alt=&quot;hotspot&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-content-text&quot;&gt;Sparfahrer根据当前燃油价格计算最经济的路线。 &lt;br/&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://appcenter.bosch.com/details/-/app/Sparfahrer&quot;&gt;&lt;b&gt;前往博世APP中心&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;" style="top: 39%; left: 66%;">
+          <div class="hotspot-icon-plus">
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--vertical"></div>
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--horizontal"></div>
+          </div>
+        </div>
+        <!-- end ngRepeat: element in elements track by $index -->
+        <div class="hotspot-new ng-scope" ng-mousedown="changeState()" data-ng-repeat="element in elements track by $index" data-el-index="4" popover-placement="bottom" popover-trigger="mouseup" data-position-x="81" data-position-y="55" popover="" uib-popover="&lt;div class=&quot;popover-content-inner&quot;&gt;&lt;div class=&quot;popover-content-img&quot;&gt;&lt;img src=&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-emobility.png&quot; class=&quot;img-responsive&quot; alt=&quot;hotspot&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-content-text&quot;&gt;充电APP通过直接引导电动车前往可用充电站扩大了电动车的应用范围。 &lt;br/&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.bosch-si.com/solutions/mobility/electromobility/charging-apps.html&quot;&gt;&lt;b&gt;了解更多&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;" style="top: 55%; left: 81%;">
+          <div class="hotspot-icon-plus">
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--vertical"></div>
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--horizontal"></div>
+          </div>
+        </div>
+        <!-- end ngRepeat: element in elements track by $index -->
+        <div class="hotspot-new ng-scope" ng-mousedown="changeState()" data-ng-repeat="element in elements track by $index" data-el-index="5" popover-placement="bottom" popover-trigger="mouseup" data-position-x="22" data-position-y="39" popover="" uib-popover="&lt;div class=&quot;popover-content-inner&quot;&gt;&lt;div class=&quot;popover-content-img&quot;&gt;&lt;img src=&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-ebike-connect.png&quot; class=&quot;img-responsive&quot; alt=&quot;hotspot&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-content-text&quot;&gt;eBike互联促进智能手机和车载计算机之间的蓝牙数据交换。 &lt;br/&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://appcenter.bosch.com/details/-/app/BoscheBikeConnect&quot;&gt;&lt;b&gt;前往博世APP中心&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;" style="top: 39%; left: 22%;">
+          <div class="hotspot-icon-plus">
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--vertical"></div>
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--horizontal"></div>
+          </div>
+        </div>
+        <!-- end ngRepeat: element in elements track by $index -->
+        <div class="hotspot-new ng-scope" ng-mousedown="changeState()" data-ng-repeat="element in elements track by $index" data-el-index="6" popover-placement="bottom" popover-trigger="mouseup" data-position-x="29" data-position-y="48" popover="" uib-popover="&lt;div class=&quot;popover-content-inner&quot;&gt;&lt;div class=&quot;popover-content-img&quot;&gt;&lt;img src=&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-ride-the-way.png&quot; class=&quot;img-responsive&quot; alt=&quot;hotspot&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-content-text&quot;&gt;Ride the Way提供1500条摩托车路线，让骑手间产生互联。 &lt;br/&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.ridetheway.it/&quot;&gt;&lt;b&gt;了解更多&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;" style="top: 48%; left: 29%;">
+          <div class="hotspot-icon-plus">
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--vertical"></div>
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--horizontal"></div>
+          </div>
+        </div>
+        <!-- end ngRepeat: element in elements track by $index -->
+        <div class="hotspot-new ng-scope" ng-mousedown="changeState()" data-ng-repeat="element in elements track by $index" data-el-index="7" popover-placement="bottom" popover-trigger="mouseup" data-position-x="12" data-position-y="46" popover="" uib-popover="&lt;div class=&quot;popover-content-inner&quot;&gt;&lt;div class=&quot;popover-content-img&quot;&gt;&lt;img src=&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-lifebuddy.png&quot; class=&quot;img-responsive&quot; alt=&quot;hotspot&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-content-text&quot;&gt;在紧急情况下，Lifebuddy会迅速将当前位置的GPS坐标发送至救援中心。 &lt;br/&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.lifebuddy.com/?setLng=en_US&quot;&gt;&lt;b&gt;了解更多&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;" style="top: 46%; left: 12%;">
+          <div class="hotspot-icon-plus">
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--vertical"></div>
+            <div class="hotspot-icon-plus-iconPlusStroke hotspot-icon-plus-iconPlusStroke--horizontal"></div>
+          </div>
+        </div>
+        <!-- end ngRepeat: element in elements track by $index --> 
+      </div>
+      <div class="row">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<a id="box_slider_everyday_life" name="box_slider_everyday_life"></a> 
+<!--m-slider-teaser start-->
+<div class="m-slider-teaser  mtb-50 bbm-module" id="box_slider_everyday_life">
+  <div class="container ng-scope" ng-controller="slickController" data-speed="1000" data-dots=".dot_8761651" data-arrows=".arrow_8761651" role="toolbar">
+    <slick init-onload="true" data="true" settings="slickConfig" autoplay="false" autoplayspeed="1000" speed="1000" class="slider-teaser row ng-isolate-scope slick-initialized slick-slider slick-dotted" style="display: block;">
+      <button type="button" data-role="none" class="slick-prev slick-arrow slick-disabled" aria-label="Previous" role="button" aria-disabled="true" style="display: block;">Previous</button>
+      <div aria-live="polite" class="slick-list draggable">
+        <div class="slick-track" style="opacity: 1; width: 2758px; transform: translate3d(0px, 0px, 0px); transition: transform 1000ms ease;" role="listbox">
+         
+          <div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 394px;" tabindex="-1" role="option" aria-describedby="slick-slide11">
+            <div>
+              <div id="" class="col-sm-6 col-md-4  bbm-stick ng-scope" data-ng-controller="slickImgController" data-targetimg="/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/bosch_mobility_solutions_taeser_fun2drive_teaser.jpg" data-targetimgmobile="/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/bosch_mobility_solutions_taeser_fun2drive_teaser.jpg" data-targetimgtablet="/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/bosch_mobility_solutions_taeser_fun2drive_teaser.jpg" style="width: 100%; display: inline-block;">
+                <div class="m-teaser">
+                  <div class="teaser-border"></div>
+                  <!-- ngIf: showImage --><a href="https://appcenter.bosch.com/details/-/app/Fun2Drive" title="量化驾驶乐趣 车辆性能尽在掌握" target="_blank" ng-if="showImage" class="ng-scope" tabindex="0">
+                  <figure>
+                    <div class="img-wrapper"><img class="img-responsive" ng-src="/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/bosch_mobility_solutions_taeser_fun2drive_teaser.jpg" src="/skin/images/bosch_mobility_solutions_taeser_fun2drive_teaser.jpg"></div>
+                  </figure>
+                  </a><!-- end ngIf: showImage -->
+                  <div class="teaser-text">
+                    <div class="teaser-title"></div>
+                    <a href="https://appcenter.bosch.com/details/-/app/Fun2Drive" title="量化驾驶乐趣 车辆性能尽在掌握" target="_blank" tabindex="0">
+                    <h3 class="h3"><strong>量化驾驶乐趣</strong><br>
+                      车辆性能尽在掌握 </h3>
+                    </a> 
+                    <!-- ( except Grid 12) -->
+                    <div class="teaser-text-copy">
+                      <p>速度、扭矩、油耗、发动机性能：fun2drive把智能手机变成了终端车载计算机。</p>
+                      <a href="https://appcenter.bosch.com/details/-/app/Fun2Drive" class="link-more" target="_blank" tabindex="0"></a> </div>
+                    <!-- show download list by grid 4 and 6 --> 
+                    <!-- download links max. 2 entries       -->
+                    <ul class="download-list">
+                      <li class="download-list-item"><a href="https://play.google.com/store/apps/details?id=com.bosch.fun2drive" target="_blank" title="Android" tabindex="0"> <span class="icon icon-16x16_download"></span><span>Android</span> </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                   
+                    
+             <div>
+             
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;" aria-disabled="false">Next</button>
+      <ul class="slick-dots" role="tablist" style="display: block;">
+        <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation10" id="slick-slide10">
+          <button type="button" data-role="none" role="button" tabindex="0">1</button>
+        </li>
+        <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation11" id="slick-slide11">
+          <button type="button" data-role="none" role="button" tabindex="0">2</button>
+        </li>
+        <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation12" id="slick-slide12">
+          <button type="button" data-role="none" role="button" tabindex="0">3</button>
+        </li>
+        <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation13" id="slick-slide13">
+          <button type="button" data-role="none" role="button" tabindex="0">4</button>
+        </li>
+        <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation14" id="slick-slide14">
+          <button type="button" data-role="none" role="button" tabindex="0">5</button>
+        </li>
+      </ul>
+    </slick>
+    <div class="slickSliderDots dot_8761651"></div>
+    <div class="slickSliderArrows arrow_8761651"></div>
+  </div>
+</div>
+<!--m-slider-teaser end--> 
+<a id="tooltip_professional" name="tooltip_professional"></a>
+<div ng-controller="hotspotsController" id="tooltip_professional" style="background-color:#f1f1f1;" class="m-hotspot hotspot-fullsize hotspot-bg ng-scope" targetspots="{              
+			&quot;spot0&quot;:{ 
+				&quot;position&quot;: &quot;bottom&quot;,     
+				&quot;positionX&quot;: &quot;62&quot;,
+				&quot;positionY&quot;:&quot;31&quot;,
+				&quot;text&quot;: &quot;&lt;div class=\&quot;popover-content-inner\&quot;&gt;&lt;div class=\&quot;popover-content-img\&quot;&gt;&lt;img src=\&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-fleet.png\&quot; class=\&quot;img-responsive\&quot; alt=\&quot;hotspot\&quot;&gt;&lt;/div&gt;&lt;div class=\&quot;popover-content-text\&quot;&gt;适用于车队驾驶员的智能出行APP是一个配有集成式错误诊断工具和车辆探测器的数字记录器。 &lt;br/&gt;&lt;a target=\&quot;_blank\&quot; href=\&quot;http://www.boschconnectedvehicle.com/us/en/T-AboutUsPage.html\&quot;&gt;&lt;b&gt;了解更多&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;&quot;
+		   },           
+			&quot;spot1&quot;:{ 
+				&quot;position&quot;: &quot;bottom&quot;,     
+				&quot;positionX&quot;: &quot;19&quot;,
+				&quot;positionY&quot;:&quot;70&quot;,
+				&quot;text&quot;: &quot;&lt;div class=\&quot;popover-content-inner\&quot;&gt;&lt;div class=\&quot;popover-content-img\&quot;&gt;&lt;img src=\&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-mobile-scan.png\&quot; class=\&quot;img-responsive\&quot; alt=\&quot;hotspot\&quot;&gt;&lt;/div&gt;&lt;div class=\&quot;popover-content-text\&quot;&gt;移动扫描系统显示错误代码，让用户通过智能手机诊断错误。 &lt;br/&gt;&lt;a target=\&quot;_blank\&quot; href=\&quot;https://appcenter.bosch.com/details/-/app/BoschMobileScan\&quot;&gt;&lt;b&gt;前往博世APP中心&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;&quot;
+		   },           
+			&quot;spot2&quot;:{ 
+				&quot;position&quot;: &quot;bottom&quot;,     
+				&quot;positionX&quot;: &quot;54&quot;,
+				&quot;positionY&quot;:&quot;74&quot;,
+				&quot;text&quot;: &quot;&lt;div class=\&quot;popover-content-inner\&quot;&gt;&lt;div class=\&quot;popover-content-img\&quot;&gt;&lt;img src=\&quot;/media/global/highlights/comprehensive-webfeatures/bosch-mobility-app-for-smartphone/app-icons/bosch_mobility_solutions_icon-cap.png\&quot; class=\&quot;img-responsive\&quot; alt=\&quot;hotspot\&quot;&gt;&lt;/div&gt;&lt;div class=\&quot;popover-content-text\&quot;&gt;CAP “说明”车辆问题并将部件和总成信息传递给机修工。 &lt;br/&gt;&lt;a target=\&quot;_blank\&quot; href=\&quot;https://appcenter.bosch.com/details/-/app/BoschCAP\&quot;&gt;&lt;b&gt;前往博世APP中心&lt;/b&gt;&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;&quot;
+		   }           
+	   }">
+
+</div>
+
+<!-- content end-->
+<form class="m-cookie ng-pristine ng-valid ng-isolate-scope" cookie-manager="">
+  <div class="m-cookie-intro active-cookie-menu" ng-hide="cookieWindowState">
+    <div class="container">
+      <div class="row"> 
+        <!--a class="close-cta" data-ng-click="abort()" href="#" role="button">
+                    <i class="icon icon-bosch-ico_close pull-right cta-close"></i>
+                </a-->
+        <div class="col-md-9">
+          <h4 ng-bind-html="intro.headline" class="ng-binding">Cookie 设置</h4>
+          <p ng-bind-html="intro.paragraph" class="ng-binding">网站即将记录您的Cookie信息，选择“同意”表示您认同我们收集您的Cookie信息</p>
+        </div>
+        <div class="col-md-3">
+          <div class="btn-block"> <a href="http://www.bosch-mobility-solutions.cn/#" role="button" class="btn-custom" ng-click="setCookieLevel(3)"> <span class="ng-binding">我接受</span></a> 
+            <!--a href="#" data-ng-click="showSecuritySettings()" role="button" class="btn-custom">
+                           <span>{{intro.buttonChange}}</span></a --> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--div class="m-cookie-config " collapse="cookieSettingsCollapse" ng-show="cookieSettingsState">
+
+        <div class="container">
+            <div class="cookieHeadlineIntro">
+                <span data-ng-click="cookieInformation()"></span>
+                <p class="h2" ng-bind-html="dropdown.headline"></p>
+                <p collapse="cookieInformationText" ng-bind-html="dropdown.paragraph"></p>
+            </div>
+
+
+            <h3 class="h4" ng-bind-html="config.headline"></h3>
+            <h2></h2>
+            <ul class="config-level">
+                <li ng-click="chooseCookieLevel($index)" ng-repeat="level in config.levels"
+                    ng-class="level.state ? 'active' : ''"><span class="{{level.class}}"><p>{{level.name}}</p></span></li>
+            </ul>
+            <div class="row">
+                <div class="col-md-6 action-allow">
+                    <h3 class="h3" ng-bind-html="action.headlineAllowed"></h3>
+                    <ul class="action-list">
+                        <li ng-repeat="allowed in allowedList">
+                            <span class="icon icon-24x24_check_mobile"></span>
+                            <span class="icon icon-24x24_close_mobile"></span>
+                            <p>{{allowed}}</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 action-disallow">
+                    <h3 class="h3" ng-bind-html="action.headlineDisallowed"></h3>
+                    <ul class="action-list">
+                        <li ng-repeat="disallowed in disallowedList"><span class="icon icon-24x24_check_mobile"></span>
+                            <span class="icon icon-24x24_close_mobile"></span>
+                            <p>{{disallowed}}</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div--> 
+  <!--div class="dropdown">
+                <div class="dropdown-head">
+                    <span data-ng-click="cookieInformation()" class="icon {{cookieInformationTextState}}"></span>
+                    <p class="h3" ng-bind-html="dropdown.headline" ></p>
+                </div>
+               <p collapse="cookieInformationText" ng-bind-html="dropdown.paragraph"></p>
+            </div--> 
+  <!--div class="btn-block">
+                <a data-ng-click="abort()" href="#" role="button" class="btn-custom btn-left">
+                    <span>{{action.abortButton}}</span></a>
+                <a href="#" data-ng-click="saveAndClose()" role="button" class="btn-custom btn-right btn-right-cookie">
+                    <span>{{action.saveAndCloseButton}}</span></a>
+            </div>
+            <div class="config-media">
+            </div>
+            <p-- ng-bind-html="media.paragraph"></p-
+        </div>
+
+    </div-->
+</form>
+{dede:include filename="footer.htm"/} 
+<!-- 3th party libs --> 
+<script type="text/javascript" async="" src="/skin/js/wtid.js"></script><script type="text/javascript" src="/skin/js/webtrends.hm.js"></script><script type="text/javascript" src="/skin/js/rb_cookies.js"></script><script async="" src="/skin/js/webtrends2.js"></script><script src="/skin/js/merge"></script> 
+<!-- #end 3th party libs --> 
+<script type="text/javascript" src="/skin/js/lib.BBM.min.js"></script> 
+<script type="text/javascript">
+	'use strict';
+/*
+	generation prefix: 
+*/
+angular.module('Constants',[])
+        .constant('fsConfig', {
+            fsPrev: '/resources/dev_angular/Client/',
+            fsDeploy: '/resources/dev_angular/Client/',
+            fsMoreText: '',
+            fsMoreBtnText: '',
+            fsCloseBtnText: '',
+            fsPlayBtnText: '',
+            fsMailserviceUrl: '/cn/wcms-technology/mail-service.php',
+            fsPortfolioHeight: '33000',
+            fsPortfolioHeightMobile: '45000',
+            fsCookieIntro:{
+                headline: 'Cookie 设置',
+                paragraph: '网站即将记录您的Cookie信息，选择“同意”表示您认同我们收集您的Cookie信息',
+                buttonChange: '',
+                buttonConfirm: '我接受',
+                link: {
+                    title: '',
+                    target: '',
+                    href: '',
+                    text: ''
+                }
+            },
+            fsCookieConfig: {
+                headline: 'Change your cookie settings'
+            },
+            fsCookieActionList: {
+                cookieName: 'bbm_solution_cookie',
+                headline: '',
+                headlineAllowed: 'This website will:',
+                headlineDisallowed: 'This website will not:',
+                necessary:'{"level":"Necessary", "value" : "Necessary: remember your cookie permission setting#!Necessary: allow session cookies#!Necessary: remember filter settings for the site search functionality#!Necessary: remember filter settings for news / press article filter"}',
+                comfort: '{"level":"Comfort", "value" : "Comfort: remember selected font size#!Comfort: remember social media settings"}',
+                statistic: '{"level":"Statistics", "value" : "Statistics: increase the data quality of the statistics functions#!Statistics: anonymization of statistical data"}',
+                targeting: '{"level":"Targeting", "value" : "Targeting: tailor information and advertising to your interests based on e.g. the content you have visited before. (Currently we do not use targeting or targeting cookies.)"}',
+                saveAndCloseButton: 'Save and close',
+                abortButton: 'Cancel'
+            },
+            fsCookieDropDown: {
+                headline: 'What are cookies?',
+                paragraph: 'Cookies are small text files that are stored on your computer when you visit our website. You can remove the cookies if you want, but this may prevent you from using parts of our website. To remove cookies, please check your browser menu. If you want to learn more about the cookies we use, please click on &quot;more about our cookies&quot; at the bottom of this dialogue. With the slider below, you can enable or disable different types of cookies.'
+            },
+            fsCookieMedia: {
+                headline: 'Settings for social media',
+                checkboxLabel: 'Activate all buttons for all social media used in this website during your visit.', 
+                paragraph: 'Note: this dialogue does not manage third party cookies, e.g. social media plugins.'
+            },
+             fs360Config: {
+                totalFrames: 30, // Total no. of image you have for 360 slider
+                endFrame: 30 // end frame for the auto spin animation
+            },
+            fsDevelopmentLog : false
+        });
+	</script> 
+<!-- appication main --> 
+<script type="text/javascript" src="/skin/js/directive.BBM.js"></script> 
+<!-- appication main --> 
+<script type="text/javascript" src="/skin/js/fs.BBM.js"></script> 
+<script type="text/javascript" src="/skin/js/bbm.v2.app.js"></script> 
+<!-- #end application main --> 
+<!-- START SmartSource Data Collector TAG v10 --> 
+<script type="text/javascript">
+    //var gDomain="wts.bosch.com";
+    //var gDcsId="dcsmyg4n310000wwqfu38yrb4_5w6m";    
+    window.webtrendsAsyncInit=function(){ 
+        var dcs=new Webtrends.dcs().init({ 
+            dcsid:"dcs2226udgkeddg5a13micb2u_6i1x" 
+            ,domain:"statse.webtrendslive.com"
+            ,fpcdom:'.' + location.hostname.split('.').slice(-2).join('.')
+            ,fpc:'WT_FPC' 
+            ,timezone:1
+            ,i18n:true
+            ,adimpressions:true
+            ,adsparam:"WT.ac"
+            ,offsite:false
+            ,onsitedoms:"bosch-mobility-solutions.de,"+location.hostname
+            ,download:true
+            ,downloadtypes:"xls,doc,pdf,txt,csv,zip,docx,xlsx,rar,gzip"
+            ,rightclick:true
+            ,javascript:true
+            ,anchor:true
+            ,paidsearchparams:"gclid,ad_id"
+            ,plugins:{ 
+                cookies: {src:'//btm.bosch.com/rb/rb_cookies.js'}
+                ,hm: {src:'//s.webtrends.com/js/webtrends.hm.js'}
+                //,doubletag:{src:'//btm.bosch.com/rb/rb_doubletag.js',servers:[{domain:gDomain,dcsid:gDcsId}]}
+            } 
+        }); 
+          if( typeof(searchData) != 'undefined' ){
+          if( searchData.DCSext.wtg_search_start == "0" ){
+               $.extend( dcs, searchData );
+          }
+        }
+        dcs.track({
+            transform:function(dcsObject,multiTrackObject){ 
+                dcsObject.DCS.dcsipa="1"; }
+        })
+    };
+    (function(){ 
+        var s=document.createElement("script");
+        s.async=true; 
+        s.src="//s.webtrends.com/js/webtrends.js";
+        var s2=document.getElementsByTagName("script")[0]; 
+        s2.parentNode.insertBefore(s,s2); 
+    }());
+//START TWT Event Tracking 
+// BBM Event Tracking, provided by TWT Interactive: Version 1.7, last change: 08/01/2017
+var _twt;if(!_twt){_twt={}}_twt=function(q){q.version="1.7";var b,p="DCSext.wti_evnm",x,j="DCSext.wti_evct",l,k="DCSext.wti_evdt",B="1",o="DCSext.wti_evcn",s,f="DCSext.wti_evurl",e,d="",t="DCSext.wti_evmax",m,n="DCSext.wti_evcv",G=" | ";var w,A;var z=[];for(var D=0;D<30;D++){z[D]=true}var C=[];var a=[];var h=[];var y="";var v;var u=function(J,K,L){if(L){var I=new Date();I.setTime(I.getTime()+(L*24*60*60*1000));var i="; expires="+I.toGMTString()}else{var i=""}document.cookie=J+"="+K+i+"; path=/"};var c=function(J){var L=J+"=";
+var I=document.cookie.split(";");for(var K=0;K<I.length;K++){var M=I[K];while(M.charAt(0)==" "){M=M.substring(1,M.length)}if(M.indexOf(L)==0){return M.substring(L.length,M.length)}}return null};var H=function(i){u(i,"",-1)};var g=function(M,N,P){if(typeof M!=="string"){return"input is not a string"}N=N||50;var L=M.length;if(L>N){P=P||"...";var O=P.length;if(O>N){return M.substr(L-N)}var I=-0.5*(N-L-O);var i=L/2;var J=M.substr(0,i-I);var K=M.substr(L-i+I);return J+P+K}return M};var E=function(i){s=i?i:decodeURI(location.pathname);
+e=parseInt(c("evcnt"))||0;e++;d=e.toString()+" Event"+((e<2)?"":"s");if(x.match(/(Download-Center|Download \[Mediacenter\])/i)){m="1"}else{m="0"}Webtrends.multiTrack({argsa:["DCS.dcsuri","/event_click/bbm.evt","WT.dl","1999","WT.ti","Event Click",j,x,k,l,p,b,f,s,o,B,t,d,n,m]});u("evcnt",e)};var F=function(){if(typeof(searchData)!="undefined"){if(searchData.DCSext.wtg_search_start==0){var i=document.referrer.replace(/.*:\/\/[^\/]+/i,"");l=(Number(searchData.WT.oss_r)>0)?"with results":"without results";w=A="";
+x="Search";b=x+G+g(l);E(i)}}};var r=function(){if($("slick ul.slick-dots").length>0){window.clearInterval(v);$("slick ul.slick-dots li").bind("click",function(i){if(z[22]){l="Dot";w=A="";x="Slider [Navigation]";b=x+G+g(l);z[22]=false;E()}});$("button.slick-arrow").bind("click",function(i){if(z[23]){l="Arrow";w=A="";x="Slider [Navigation]";b=x+G+g(l);z[23]=false;E()}})}};q.init=function(){window.setTimeout(function(){F()},2000);$("ul.toolbar-bottom-media a,ul.link-list a").bind("click",function(i){if(z[0]){l=$(i.currentTarget).attr("title");
+w=$(i.currentTarget).attr("href");A=$(i.currentTarget).attr("target");var I=$(i.currentTarget).parents("header").length;if(I>0){x="Header"}else{x="Footer"}b=x+G+g(l);z[0]=false;E()}});$("div.header-right a").bind("click",function(i){if(z[1]){l=$(i.currentTarget).attr("title");w=$(i.currentTarget).attr("href");A=$(i.currentTarget).attr("target");x="Header";b=x+G+g(l);z[1]=false;E()}});if($("div.navbar-middle a").length>0){$(document).on("click","div.navbar-middle a",function(i){if(z[2]){l=$(i.currentTarget).attr("title");
+w=$(i.currentTarget).attr("href");A=$(i.currentTarget).attr("target");x="Navigation [Portal]";b=x+G+g(l);z[2]=false;E()}})}if($("div.m-productPortFolio a").length>0){$(document).on("click","div.m-productPortFolio a",function(i){if(z[3]){var I=[];$("div.m-productPortFolio li.active").each(function(J){I.push($(this).find("span:first").text())});l=I.join(">")+">"+$(i.currentTarget).text();w=$(i.currentTarget).attr("href");A=$(i.currentTarget).attr("target");x="Navigation [Product portfolio]";b=x+G+g(l);z[3]=false;
+E()}})}$("div.m-share-medias a").bind("click",function(i){if(z[4]){l=$(i.currentTarget).attr("title");w=$(i.currentTarget).attr("href");A=$(i.currentTarget).attr("target");x="Share";b=x+G+g(l);z[4]=false;E()}});$("div.download-list-item a").bind("click",function(i){if(z[5]){l=$.trim($(i.currentTarget).text());w=$(i.currentTarget).attr("href");A=$(i.currentTarget).attr("target");x="Social";b=x+G+g(l);z[5]=false;E()}});$("div.m-teaser-video div.video-wrapper").bind("click",function(I){var i=$(I.currentTarget).parents("div.m-text-img-video");
+if(i.length>0){l=$.trim($(i).find("h2").text());l=l.replace(/\r?\n|\r/g," ")}else{l=$.trim($(I.currentTarget).find("h3").text());if(!l){l=$.trim($(I.currentTarget).parents("div.m-video-container").find("h2").text())}}if(!h[l]){w=A="";x="Video";b=x+G+g(l);h[l]=1;E()}});if($("li.download-list-item a").length>0){$(document).on("click","li.download-list-item a",function(i){if(z[7]){l=$.trim($(i.currentTarget).text());w=$(i.currentTarget).attr("href");A=$(i.currentTarget).attr("target");x="Download";b=x+G+g(l);z[7]=false;
+E()}})}$("div.m-teaser-download button").bind("click",function(i){if(z[24]){l=$.trim($(i.currentTarget).text());w=A="";x="Download-Center";b=x+G+g(l);z[24]=false;E()}});if($("div.m-teaser-download a").length>0){$(document).on("click","div.m-teaser-download a",function(i){if(z[18]){l=$.trim($(i.currentTarget).text());w=$(i.currentTarget).attr("href");A=$(i.currentTarget).attr("target");x="Download";b=x+G+g(l);z[18]=false;E()}})}$("a.download-box").on("click",function(i){if(z[25]){l=$.trim($(i.currentTarget).text()).replace(/\s{2,}/g," ");
+w=A="";x="Download [Box]";b=x+G+g(l);z[25]=false;E()}});$(document).on("click","div.top-downloads a",function(i){l=$.trim($(i.currentTarget).text()).replace(/\s{2,}/g," ");w=A="";x="Download [Mediacenter]";b=x+G+g(l);E()});if($("div.m-stage-slide").length>0){$(document).on("click","div.m-stage-slide a",function(i){if(z[13]){l=$.trim($(i.currentTarget).text());w=$(i.currentTarget).attr("href");A=$(i.currentTarget).attr("target");x="Slider [Stage]";b=x+G+g(l);z[13]=false;E()}})}if($("div.slider-thumbnail").length>0){$("div.slider-thumbnail div.img-wrapper-thumb").bind("click",function(i){if(z[14]){l="Thumbnail";
+w=A="";x="Slider [Navigation]";b=x+G+g(l);z[14]=false;E()}})}if($("div.m-teaser-contact").length>0){$(document).on("mousedown","div.m-teaser-contact div.btn-custom, div.m-teaser-contact-views div[data-ng-click]",function(i){l=$(i.currentTarget).attr("data-ng-click");w=A="";l=l.replace(/\(\)/i,"");if(!a[l]){x="Contact";b=x+G+g(l);E();a[l]=1}})}if($("div.imagehotspot-container").length>0){$(document).on("mousedown","div.imagehotspot-container div.hotspot-new:not(.js-pop-active),div.hotspot:not(.js-pop-active)",function(i){if(z[15]){l=$(i.currentTarget).attr("popover")||$(i.currentTarget).attr("uib-popover");
+w=A="";x="ToolTipp";b=x+G+g(l);l=g(l,64);z[15]=false;E()}})}if($("div.jx-slider").length>0){$("div.jx-slider").bind("click",function(i){if(z[16]){l=$.trim($(i.currentTarget).parents("div.container").find("h2").text());w=A="";x="Compare View";b=x+G+g(l);z[16]=false;E()}})}if($("ul.infokit a").length>0){$("ul.infokit a").on("click",function(i){if(z[17]){l=$.trim($(i.currentTarget).text());w=A="";x="Infopaket Download";b=x+G+g(l);z[17]=false;E()}})}if($("uib-accordion div.infobox").length>0){$("uib-accordion div.infobox").on("click",function(i){var I=$.trim($(i.currentTarget).find("h6").text());
+if($(i.currentTarget).hasClass("panel-open")){if(!C[I]){l=I;w=A="";x="Open Highlight Topic Module";b=x+G+g(l);E();C[I]=1}}})}if($("div.why-bosch").length>0){$("div.why-bosch").on("mouseup",function(i){if($(i.target).parent("nav.tabs").length>0){if(!$(i.target).hasClass("active")){var I=$.trim($(i.target).text());if(!C[I]){l=I;w=A="";x="Benefit Module [Targetgroup]";b=x+G+g(l);E();C[I]=1}}}else{if($(i.target).parents("ul.nav").length>0){if(!$(i.target).hasClass("active")){var I=$.trim($(i.target).parents("li").find("span.label").text());
+if(!C[I]){l=I;w=A="";x="Benefit Module [Advantage]";b=x+G+g(l);E();C[I]=1}}}}})}if($("div.m-slider-related").length>0){$("div.m-slider-related button").bind("click",function(i){if(z[18]){l="Arrow";w=A="";x="Related Content [Navigation]";b=x+G+g(l);z[18]=false;E()}})}if($("slick").length>0){v=window.setInterval(r(),1000)}if($("div.spotbox div.ng-scope").length>0){$("div.spotbox div.ng-scope").on("mouseup",function(J){if(!($(J.currentTarget).hasClass("active-up")||$(J.currentTarget).hasClass("active-down"))){var I=$(J.currentTarget).parents("div.container");
+var i=$(J.currentTarget).attr("data-el-index").toString();if(!a[i]){l="[Plus Symbol] "+$.trim($(I).find('slick div.slick-slide[data-slick-index="'+i+'"] span.product-headline').text());w=A="";x="Product Selection Module";b=x+G+g(l);E();a[i]=1}}});$('div.product-content div[role="toolbar"] button').bind("click",function(i){if(z[19]){l="Arrow Navigation";w=A="";x="Product Selection Module";b=x+G+g(l);z[19]=false;E()}});$("div.product-content div.products-show").on("click",function(i){if(z[20]){l="Open Product Overview Layer";
+w=A="";x="Product Selection Module";b=x+G+g(l);z[20]=false;E()}})}if($('div[data-ng-controller="product360Controller"] div.threesixty').length>0){$('div[data-ng-controller="product360Controller"] div.threesixty').on("mousedown",function(i){y=$.trim($(i.currentTarget).find("img.current-image").attr("src"))}).on("mouseup",function(I){var i=$.trim($(I.currentTarget).find("img.current-image").attr("src"));if(y!=i){if(z[21]){l="Rotation";w=A="";x="360 Degree Module";b=x+G+g(l);z[21]=false;E()}}})}if($("uib-accordion div.bbm-accordion").length>0){$("uib-accordion div.bbm-accordion").on("click",function(i){var I=$.trim($(i.currentTarget).find(".accordion-headline").text());
+if($(i.currentTarget).hasClass("panel-open")){if(!C[I]){l=I;w=A="";x="Accordion";b=x+G+g(l);E();C[I]=1}}})}};return q}(_twt||{});if(typeof jQuery=="undefined"){_twt.init()}else{jQuery(document).ready(_twt.init)};
+// END TWT Event Tracking 
+</script>
+<noscript>
+&lt;img alt="dcsimg" id="dcsimg1" width="1" height="1" src="//statse.webtrendslive.com/dcs2226udgkeddg5a13micb2u_6i1x/njs.gif?dcsuri=/nojavascript&amp;amp;WT.js=No&amp;amp;WT.tv=10.4.1&amp;amp;dcssip=www.bosch-mobility-solutions.de"/&gt;
+</noscript>
+<!-- END SmartSource Data Collector TAG v10 -->
+
+</body>
+</html>
